@@ -79,10 +79,6 @@ export default {
 </template>
 
 <style scoped>
-.my-fs {
-    font-size: 0.7rem;
-}
-
 a {
     color: black;
 }
