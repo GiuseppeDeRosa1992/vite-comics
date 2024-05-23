@@ -67,7 +67,7 @@ export default {
                 <nav class="col-9 p-0">
                     <ul class="row m-0 p-0 justify-content-between">
                         <li v-for="link in links" class="col-1 p-0 text-center my-fs">
-                            <a class="text-dark text-decoration-none" :href="link.url">
+                            <a class="text-decoration-none hover" :href="link.url">
                                 <b>{{ link.text }}</b>
                             </a>
                         </li>
@@ -81,5 +81,13 @@ export default {
 <style scoped>
 .my-fs {
     font-size: 0.7rem;
+}
+
+a {
+    color: black;
+}
+
+.hover:hover {
+    color: dodgerblue;
 }
 </style>
