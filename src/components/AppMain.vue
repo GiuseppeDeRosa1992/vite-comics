@@ -17,8 +17,8 @@ export default {
 </script>
 
 <template>
-    <main>
-        <h2>Ciao sono il Main</h2>
+    <main class="py-5 container">
+        <h2>.....Ciao sono il Main ancora da rimpire......</h2>
     </main>
 </template>
 
