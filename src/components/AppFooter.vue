@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: "AppFooter",
     data() {
         return {
             cards: [
@@ -162,7 +163,7 @@ export default {
                     <button type="button" class="btn btn-outline-info text-white">SIGN-UP NOW!</button>
                 </div>
                 <div class="col-12 col-sm-8 text-center text-md-end">
-                    <span class="text-primary p-1">FOLLOW US</span>
+                    <span class="text-primary p-1 my-fs">FOLLOW US</span>
                     <img :src="img.src" alt="" v-for="img in images" class="px-2">
                 </div>
             </div>
@@ -181,7 +182,6 @@ a {
 
 #logo-dc {
     transform: scaleY(1.60);
-    opacity: 0.9;
 }
 
 .my-bg-footer {

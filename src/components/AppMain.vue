@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: "AppMain",
     data() {
         return {
 
@@ -17,9 +18,20 @@ export default {
 </script>
 
 <template>
-    <main class="py-5 container">
-        <h2>.....Ciao sono il Main ancora da rimpire......</h2>
+    <main>
+        <div class="jumbo my-h">
+        </div>
     </main>
 </template>
 
-<style></style>
+<style scoped>
+.jumbo {
+    background-image: url(/jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.my-h {
+    height: 16rem;
+}
+</style>
