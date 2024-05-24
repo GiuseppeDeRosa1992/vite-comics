@@ -93,10 +93,15 @@ export default {
 <template>
     <main>
         <!-- Sezione JUMBO -->
-        <section class="jumbo my-h mb-4">
+        <section class="jumbo my-h mb-2">
         </section>
+        <!-- SEZIONE BUTTON SOTTO JUMBO -->
+        <button type="button" class="btn btn-primary my-br px-3 current-series">
+            <b>CURRENT SERIES</b>
+        </button>
+
         <!-- SEZIONE CARD -->
-        <section>
+        <section class="content-card">
             <div class="container px-3 row m-auto">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1" v-for="card in fumetti">
                     <figure class="m-0 h-100">
@@ -106,10 +111,22 @@ export default {
                 </div>
             </div>
         </section>
+        <!-- SEZIONE LOADING -->
+        <section class="load-more text-center">
+            <button type="button" class="btn btn-primary my-br mb-3 px-4">
+                <b>LOAD MORE</b>
+            </button>
+        </section>
     </main>
 </template>
 
 <style scoped>
+.current-series {
+    position: relative;
+    top: -25px;
+    left: 50px;
+}
+
 .jumbo {
     background-image: url(/jumbotron.jpg);
     background-size: cover;

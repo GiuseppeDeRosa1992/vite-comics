@@ -8,5 +8,9 @@ ul {
 }
 
 .my-fs {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.my-br {
+    border-radius: 0;
 }
