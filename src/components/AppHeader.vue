@@ -61,12 +61,12 @@ export default {
     <header class="py-2 bg-white text-dark">
         <div class="container m-auto">
             <div class="row m-0 justify-content-between align-items-center">
-                <figure id="logo" class="col-3 col-sm-2 col-md-1 p-0 m-0">
+                <figure id="logo" class="col-12 col-sm-2 col-md-1 p-0 m-0 text-center">
                     <img src="../../public/dc-logo.png" alt="" class="w-75">
                 </figure>
-                <nav class="col-9 p-0">
+                <nav class="col-12 col-sm-9 p-0">
                     <ul class="row m-0 p-0 justify-content-between">
-                        <li v-for="link in links" class="col-6 col-sm-4 col-md-2 col-lg-1 p-0 text-center my-fs">
+                        <li v-for="link in links" class="col-12 col-sm-4 col-md-2 col-lg-1 p-0 text-center my-fs">
                             <a class="text-decoration-none hover" :href="link.url">
                                 <b>{{ link.text }}</b>
                             </a>

@@ -96,7 +96,7 @@ export default {
         <!-- Aggiuto header del footer con le img e il background azzurro -->
         <header class="my-bg py-3">
             <div class="container row m-auto justify-content-evenly align-items-center p-0">
-                <div class="col-6 col-sm-4 col-md-2  p-0" v-for="card in cards">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2  p-0" v-for="card in cards">
                     <div class="row m-0 align-items-center py-3">
                         <figure class="col-4 m-0 p-0">
                             <img :src="card.search" alt="" class="img-fluid">
@@ -111,7 +111,7 @@ export default {
         <!-- aggiungo il main del footer con background image e link vari -->
         <main class="py-3 bg-image">
             <div class="container row m-auto">
-                <div class="col-3 col-sm-2 p-1">
+                <div class="col-12 col-sm-2 p-1">
                     <h3 class="m-0 fs-5">DC COMICS</h3>
                     <ul class="p-0">
                         <li v-for="link in linksDcComics">
@@ -130,7 +130,7 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div class="col-3 col-sm-2 p-1">
+                <div class="col-12 col-sm-2 p-1">
                     <h3 class="m-0 fs-5">DC</h3>
                     <ul class="p-0">
                         <li v-for="link in linksDc">
@@ -140,7 +140,7 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div class="col-3 col-sm-2 p-1">
+                <div class="col-12 col-sm-2 p-1">
                     <h3 class="m-0 fs-5">SITES</h3>
                     <ul class="p-0">
                         <li v-for="link in linksSites">
@@ -150,7 +150,7 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div class="col-3 col-sm-6 p-0">
+                <div class="col-12 col-sm-6 p-0">
                     <img id="logo-dc" src="../../public/dc-logo-bg.png" alt="" class="img-fluid">
                 </div>
             </div>
@@ -158,10 +158,10 @@ export default {
         <!--  aggiungo footer del footer con bottone a sinistra e a destra le varie img social -->
         <footer class="py-4 my-bg-footer">
             <div class="container row m-auto justify-content-between align-items-center">
-                <div class="col-2">
+                <div class="col-12 col-sm-2 text-center text-md-start">
                     <button type="button" class="btn btn-outline-info text-white">SIGN-UP NOW!</button>
                 </div>
-                <div class="col-8 text-end">
+                <div class="col-12 col-sm-8 text-center text-md-end">
                     <span class="text-primary p-1">FOLLOW US</span>
                     <img :src="img.src" alt="" v-for="img in images" class="px-2">
                 </div>
