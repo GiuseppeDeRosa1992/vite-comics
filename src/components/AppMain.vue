@@ -1,6 +1,13 @@
 <script>
+import CardMain from './CardMain.vue';
+
 export default {
     name: "AppMain",
+
+    components: {
+        CardMain
+    },
+
     data() {
         return {
             fumetti: [
@@ -100,8 +107,8 @@ export default {
             <b>CURRENT SERIES</b>
         </button>
 
-        <!-- SEZIONE CARD -->
-        <section class="content-card">
+        <!-- SEZIONE CARD CON NORMALE CICLO -->
+        <!-- <section class="content-card">
             <div class="container px-3 row m-auto">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2 px-1" v-for="card in fumetti">
                     <figure class="m-0 h-100">
@@ -110,7 +117,15 @@ export default {
                     </figure>
                 </div>
             </div>
+        </section> -->
+
+        <!-- SEZIONE CARD CON CARTELLA CARDMAIN -->
+        <section class="content-card">
+            <div class="container px-3 row m-auto">
+                <CardMain v-for="cardSingola in fumetti" :card="cardSingola" />
+            </div>
         </section>
+
         <!-- SEZIONE LOADING -->
         <section class="load-more text-center">
             <button type="button" class="btn btn-primary my-br mb-3 px-4">
