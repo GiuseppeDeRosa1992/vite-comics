@@ -134,6 +134,6 @@ export default {
 }
 
 .my-h {
-    height: 16rem;
+    height: 20rem;
 }
 </style>

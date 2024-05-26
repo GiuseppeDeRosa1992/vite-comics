@@ -160,11 +160,13 @@ export default {
         <div id="footer-bottom" class="py-4 my-bg-footer">
             <div class="container row m-auto justify-content-between align-items-center">
                 <div class="col-12 col-sm-2 text-center text-md-start">
-                    <button type="button" class="btn btn-outline-info text-white">SIGN-UP NOW!</button>
+                    <button type="button" class="btn btn-outline-info">SIGN-UP NOW!</button>
                 </div>
                 <div class="col-12 col-sm-8 text-center text-md-end">
                     <span class="text-primary p-1 my-fs">FOLLOW US</span>
-                    <img :src="img.src" alt="" v-for="img in images" class="px-2">
+                    <a href="#">
+                        <img :src="img.src" alt="" v-for="img in images" class="px-2">
+                    </a>
                 </div>
             </div>
         </div>
@@ -174,6 +176,20 @@ export default {
 <style scoped>
 a {
     color: gray;
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+    color: white;
+}
+
+button:hover {
+    color: black;
+    transition: 2s;
+    transform: scale(1.2);
 }
 
 .my-bg {
@@ -189,7 +205,7 @@ a {
 }
 
 .bg-image {
-    background-image: url(/public/footer-bg.jpg);
+    background-image: url(/footer-bg.jpg);
     background-size: cover;
 }
 </style>

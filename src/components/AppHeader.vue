@@ -63,7 +63,7 @@ export default {
         <div class="container m-auto">
             <div class="row m-0 justify-content-between align-items-center">
                 <figure id="logo" class="col-12 col-sm-2 col-md-1 p-2 p-sm-0 m-0 text-center">
-                    <img src="../../public/dc-logo.png" alt="" class="w-75">
+                    <img src="/dc-logo.png" alt="" class="w-75">
                 </figure>
                 <nav class="col-12 col-sm-9 p-0">
                     <ul class="row m-0 p-0 justify-content-between">
